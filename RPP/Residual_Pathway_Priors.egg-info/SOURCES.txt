@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+Residual_Pathway_Priors.egg-info/PKG-INFO
+Residual_Pathway_Priors.egg-info/SOURCES.txt
+Residual_Pathway_Priors.egg-info/dependency_links.txt
+Residual_Pathway_Priors.egg-info/requires.txt
+Residual_Pathway_Priors.egg-info/top_level.txt
+rpp/__init__.py
+rpp/flax.py
+rpp/groups.py
+rpp/haiku.py
+rpp/objax.py
+rpp/rpp_conv.py

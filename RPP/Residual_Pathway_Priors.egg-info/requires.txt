@@ -1,0 +1,8 @@
+h5py
+objax
+pytest
+sklearn
+olive-oil-ml@ git+https://github.com/mfinzi/olive-oil-ml
+emlp@ git+https://github.com/mfinzi/equivariant-MLP
+optax
+tqdm>=4.38
