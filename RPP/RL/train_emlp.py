@@ -2,7 +2,7 @@ import os
 import random
 
 import numpy as np
-# import tqdmcd
+import tqdm
 from absl import app, flags
 from ml_collections import config_flags
 from tensorboardX import SummaryWriter
@@ -89,8 +89,11 @@ def main(_):
         return ring,routg
 
     action_dim = env.action_space.shape[0] if kwargs['action_space']=='continuous' else 1
+    # replay_buffer = ReplayBuffer(env.observation_space, action_dim, replay_buffer_size or FLAGS.max_steps)
     replay_buffer = ReplayBuffer(env.observation_space, action_dim,
-                                 replay_buffer_size or FLAGS.max_steps)
+                                 replay_buffer_size or FLAGS.max_steps,kwargs['state_rep'],
+                                 kwargs['state_transform'],kwargs['inv_state_transform'])
+
 
     eval_returns = []
     observation, done = env.reset(), False

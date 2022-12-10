@@ -41,7 +41,7 @@ class _Linear(nn.Module):
     @nn.compact
     def __call__(self,x):
         scaled_init = lambda *args,**kwargs: nn.initializers.lecun_normal()(*args,**kwargs)*self.init_scale
-        w = self.param('w',init_scale,(self.cout,x.shape[-1]))
+        w = self.param('w',scaled_init,(self.cout,x.shape[-1]))
         # w = self.param('w',self.init_scale,(self.cout,x.shape[-1]))
         b = self.param('b',nn.initializers.zeros,(self.cout,))
         W = (self.Pw@w.reshape(-1)).reshape(*w.shape)

@@ -214,7 +214,7 @@ environment_symmetries={
         'inv_action_transform':ant_inv_action_transform2,
         'symmetry_group':Z(4),
         'action_space':"continuous",
-        'middle_rep':136*T(0)+30*T(1),
+        # 'middle_rep':136*T(0)+30*T(1),
     },
     'Swimmer-v2':{ # Focus just on LR symmetry now, to add front back later
         'state_rep':P+P+P+2*T(0)+P+P+P, # shoud vcom swap?
