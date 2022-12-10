@@ -212,7 +212,7 @@ environment_symmetries={
         'action_rep':2*T(1),
         'action_transform':ant_action_transform2,
         'inv_action_transform':ant_inv_action_transform2,
-        'symmetry_group':Z(4),
+        'symmetry_group':S(4),
         'action_space':"continuous",
         # 'middle_rep':136*T(0)+30*T(1),
     },
