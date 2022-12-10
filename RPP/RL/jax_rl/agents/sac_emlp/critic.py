@@ -9,7 +9,7 @@ from jax_rl.networks.common import InfoDict, Params
 
 
 def target_update(sac: ActorCriticTemp, tau: float) -> ActorCriticTemp:
-    new_target_params = jax.tree_multimap(
+    new_target_params = jax.tree_util.tree_map(
         lambda p, tp: p * tau + tp * (1 - tau), sac.critic.params,
         sac.target_critic.params)
 

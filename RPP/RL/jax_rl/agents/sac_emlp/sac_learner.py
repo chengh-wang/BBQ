@@ -10,7 +10,7 @@ import optax
 import functools
 
 from jax_rl.agents.actor_critic_temp import ActorCriticTemp
-from jax_rl.agents.sac import actor, critic, temperature
+from jax_rl.agents.sac_emlp import actor, critic, temperature
 from jax_rl.datasets import Batch
 from jax_rl.networks import critic_net, policies
 from jax_rl.networks.common import InfoDict, Model
@@ -25,10 +25,11 @@ def _update_jit(sac: ActorCriticTemp, batch: Batch, discount: float,
                ) -> Tuple[ActorCriticTemp, InfoDict]:
 
     sac, critic_info = critic.update(sac, batch, discount, soft_critic=True)
+    # sac, critic_info = critic.update(sac, batch, discount, True,critic_basic_wd,critic_equiv_wd)
     if update_target:
         sac = critic.target_update(sac, tau)
 
-    sac, actor_info = actor.update(sac, batch, actor_wd, critic_wd)
+    sac, actor_info = actor.update(sac, batch, actor_wd)
     sac, alpha_info = temperature.update(sac, actor_info['entropy'],
                                          target_entropy)
 
