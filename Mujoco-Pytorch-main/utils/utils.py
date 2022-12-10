@@ -168,8 +168,8 @@ def state2equistate(state):
 
 
 
-def state2equistate_single(state):
-    state_ = state.detach().numpy()[:27]
+def state2equistate_single(state): 
+    state_ = state.cpu().detach().numpy()[:27]
     state_transfer = []
     # x_eu,y_eu,z_eu = quaternion2euler(state_[1],state_[2],state_[3],state_[4])
     x_quar,y_quar,z_quar,w_quar = state_[1], state_[2], state_[3], state_[4]
@@ -194,7 +194,7 @@ def state2equistate_single(state):
 def state2equistate(state):
     state_stack = torch.empty((len(state),30), dtype=torch.float32)
     for i in range(len(state)):
-        state_ = state[i].detach().numpy()[:27]
+        state_ = state[i].cpu().detach().numpy()[:27]
         state_transfer = []
         # x_eu,y_eu,z_eu = quaternion2euler(state_[1],state_[2],state_[3],state_[4])
         x_quar,y_quar,z_quar,w_quar = state_[1], state_[2], state_[3], state_[4]
@@ -258,12 +258,14 @@ def state2equistate(state):
 '''
 
 
-def StateAction2EqualSA(state, action):
+def StateAction2EqualSA(state, action,device):
     # Concatenate the two tensors together 
     state_ = state2equistate(state)
+    state_ = state_.to(device)
     action_ = mu_map(action)
+    action_ = action_.to(device)
     state_action = torch.cat((state_,action_),dim=1).to(torch.float32)
-
+    state_action = state_action.to(device)
     return state_action
 
 

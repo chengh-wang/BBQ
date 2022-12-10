@@ -137,7 +137,7 @@ else : # off policy
             # print(f'State Before Getting into the method:\n {state}, \nState Size: {state.shape}')
             action, _ = agent.get_action_single(torch.from_numpy(state).float().to(device))
             action = action.cpu().detach().numpy()
-            next_state, reward, done, info = env.step(action)
+            next_state, reward, done, info = env.step(action[0])
             # reward = (state[0] - 0.3)*50 - (state[13] + state[14] + state[15])*10
             transition = make_transition(state,\
                                         action,\
@@ -153,7 +153,10 @@ else : # off policy
             score += reward
             if agent.data.data_idx > agent_args.learn_start_size: 
                 # print("Yeah !!!!!!!!!!!!!!!!!")
+                print("Start Training!!!")
+                print("device",device)
                 agent.train_net(agent_args.batch_size, n_epi)
+                print("Training ends!!!")
         score_lst.append(score)
         # print("The program continues!!")
         if args.tensorboard:
