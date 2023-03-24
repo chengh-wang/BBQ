@@ -122,7 +122,8 @@ class SAC(nn.Module):
             # next_actions = next_actions.detach().numpy()
             next_s_a = StateAction2EqualSA(next_states,next_actions,self.device)
             next_s_a = next_s_a.to(self.device)
-            # q_1 = self.target_q_1(next_states,next_actions)
+            # q_1 = self.target_q_1(next_states,next
+            # _actions)
             q_1 = self.target_q_1.forward(next_s_a)
             q_1 = q_1.to(self.device)
             # q_2 = self.target_q_2(next_states,next_actions)

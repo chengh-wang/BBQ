@@ -15,7 +15,7 @@ os.makedirs('./model_weights', exist_ok=True)
 
 parser = ArgumentParser('parameters')
 
-parser.add_argument("--env_name", type=str, default = 'Ant-v3', help = "'Ant-v2','HalfCheetah-v2','Hopper-v2','Humanoid-v2','HumanoidStandup-v2',\
+parser.add_argument("--env_name", type=str, default = 'Ant-v2', help = "'Ant-v2','HalfCheetah-v2','Hopper-v2','Humanoid-v2','HumanoidStandup-v2',\
           'InvertedDoublePendulum-v2', 'InvertedPendulum-v2' (default : Hopper-v2)")
 parser.add_argument("--algo", type=str, default = 'sac', help = 'algorithm to adjust (default : ppo)')
 parser.add_argument('--train', type=bool, default=True, help="(default: True)")
