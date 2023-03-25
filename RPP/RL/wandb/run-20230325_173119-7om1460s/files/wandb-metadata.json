@@ -1,0 +1,85 @@
+{
+    "os": "Linux-5.15.0-67-generic-x86_64-with-glibc2.31",
+    "python": "3.9.15",
+    "heartbeatAt": "2023-03-25T21:31:20.773335",
+    "startedAt": "2023-03-25T21:31:19.397041",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/chengh-wang/Documents/git/BBQ/RPP/RL/train_emlp_v2.py",
+    "codePath": "RPP/RL/train_emlp_v2.py",
+    "git": {
+        "remote": "https://github.com/chengh-wang/BBQ.git",
+        "commit": "8cce7bde5b0ad24ffc4e040dd9420bea86234d07"
+    },
+    "email": "wang.chengh@northeastern.edu",
+    "root": "/home/chengh-wang/Documents/git/BBQ",
+    "host": "chengh-wang",
+    "username": "chengh-wang",
+    "executable": "/home/chengh-wang/anaconda3/envs/torch-gpu/bin/python",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2.837375,
+        "min": 800.0,
+        "max": 3800.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2.8,
+            "min": 800.0,
+            "max": 3800.0
+        },
+        {
+            "current": 2.8,
+            "min": 800.0,
+            "max": 3800.0
+        },
+        {
+            "current": 2.8,
+            "min": 800.0,
+            "max": 3800.0
+        },
+        {
+            "current": 2.8,
+            "min": 800.0,
+            "max": 3800.0
+        },
+        {
+            "current": 2.8,
+            "min": 800.0,
+            "max": 3800.0
+        },
+        {
+            "current": 2.8,
+            "min": 800.0,
+            "max": 3800.0
+        },
+        {
+            "current": 3.099,
+            "min": 800.0,
+            "max": 3800.0
+        },
+        {
+            "current": 2.8,
+            "min": 800.0,
+            "max": 3800.0
+        }
+    ],
+    "disk": {
+        "total": 142.85906982421875,
+        "used": 115.26280212402344
+    },
+    "gpu": "NVIDIA GeForce GTX 1050 Ti",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce GTX 1050 Ti",
+            "memory_total": 4294967296
+        }
+    ],
+    "memory": {
+        "total": 15.51174545288086
+    }
+}

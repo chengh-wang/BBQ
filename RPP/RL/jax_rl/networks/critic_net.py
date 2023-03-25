@@ -1,6 +1,9 @@
 """Implementations of algorithms for continuous control."""
 
 from typing import Sequence, Tuple
+import sys
+sys.path.append("../../../")
+
 
 import jax.numpy as jnp
 from flax import linen as nn

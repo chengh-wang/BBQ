@@ -1,0 +1,31 @@
+
+CWD =  /home/chengh-wang/Documents/git/BBQ/RPP/RL
+/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/gym/envs/registration.py:505: UserWarning: [33mWARN: The environment Ant-v2 is out of date. You should consider upgrading to version `v3` with the environment ID `Ant-v3`.
+  logger.warn(
+/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/gym/core.py:172: DeprecationWarning: [33mWARN: Function `env.seed(seed)` is marked as deprecated and will be removed in the future. Please use `env.reset(seed=seed) instead.
+  deprecation(
+  0%|▏                                                     | 4119/1000000 [00:02<08:09, 2035.58it/s]
+Traceback (most recent call last):
+  File "/home/chengh-wang/Documents/git/BBQ/RPP/RL/train_emlp_v2.py", line 197, in <module>
+    app.run(main)
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/absl/app.py", line 303, in run
+    _run_main(main, args)
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/absl/app.py", line 251, in _run_main
+    sys.exit(main(argv))
+  File "/home/chengh-wang/Documents/git/BBQ/RPP/RL/train_emlp_v2.py", line 144, in main
+    next_observation, reward, done, info = env.step(action)
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/gym/core.py", line 314, in step
+    observation, reward, done, info = self.env.step(action)
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/gym/core.py", line 340, in step
+    return self.env.step(self.action(action))
+  File "/home/chengh-wang/Documents/git/BBQ/RPP/RL/jax_rl/wrappers/episode_monitor.py", line 22, in step
+    observation, reward, done, info = self.env.step(action)
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/gym/wrappers/time_limit.py", line 17, in step
+    observation, reward, done, info = self.env.step(action)
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/gym/wrappers/order_enforcing.py", line 13, in step
+    observation, reward, done, info = self.env.step(action)
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/gym/envs/mujoco/ant.py", line 13, in step
+    self.do_simulation(a, self.frame_skip)
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/gym/envs/mujoco/mujoco_env.py", line 140, in do_simulation
+    self.sim.step()
+KeyboardInterrupt

@@ -1,0 +1,1 @@
+{"training/return": 21.982348920316465, "_timestamp": 1679781357.3911955, "_runtime": 169.4336655139923, "_step": 295, "training/length": 225, "training/duration": 1.7106263637542725, "eval/average returns": 672.7782741850945, "_wandb": {"runtime": 171}}

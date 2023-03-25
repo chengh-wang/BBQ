@@ -1,0 +1,29 @@
+/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/gym/envs/registration.py:505: UserWarning: [33mWARN: The environment Ant-v2 is out of date. You should consider upgrading to version `v3` with the environment ID `Ant-v3`.
+  logger.warn(
+/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/gym/core.py:172: DeprecationWarning: [33mWARN: Function `env.seed(seed)` is marked as deprecated and will be removed in the future. Please use `env.reset(seed=seed) instead.
+  deprecation(
+CWD =  /home/chengh-wang/Documents/git/BBQ/RPP/RL
+
+
+
+  1%|▌                                                     | 9925/1000000 [00:05<09:16, 1779.44it/s]/home/chengh-wang/Documents/git/BBQ/RPP/RL/jax_rl/agents/sac_emlp/actor.py:12: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  return isinstance(pars, collections.Mapping)
+  1%|▌                                                      | 9999/1000000 [00:22<36:54, 447.13it/s]
+Traceback (most recent call last):
+  File "/home/chengh-wang/Documents/git/BBQ/RPP/RL/train_emlp_v2.py", line 197, in <module>
+    app.run(main)
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/absl/app.py", line 303, in run
+    _run_main(main, args)
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/absl/app.py", line 251, in _run_main
+    sys.exit(main(argv))
+  File "/home/chengh-wang/Documents/git/BBQ/RPP/RL/train_emlp_v2.py", line 190, in main
+    wandb.log(eval_returns)
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 370, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 333, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 1714, in log
+    self._log(data=data, step=step, commit=commit)
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 1491, in _log
+    raise ValueError("wandb.log must be passed a dictionary")
+ValueError: wandb.log must be passed a dictionary
