@@ -32,7 +32,7 @@ flags.DEFINE_integer('start_training', int(1e4),
 flags.DEFINE_boolean('tqdm', True, 'Use tqdm progress bar.')
 flags.DEFINE_boolean('save_video', False, 'Save videos during evaluation.')
 flags.DEFINE_boolean('rpp_value', False, 'Use RPP for value function')
-flags.DEFINE_boolean('rpp_policy', True, 'Use RPP for policy function')
+flags.DEFINE_boolean('rpp_policy', False, 'Use RPP for policy function')
 flags.DEFINE_string('group', '', 'Also use RPP for value function')
 flags.DEFINE_float('equiv_wd', 1e-6, 'Policy Equivariant weight decay')
 flags.DEFINE_float('basic_wd', 1e-6, 'Policy Basic weight decay')
