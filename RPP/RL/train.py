@@ -13,6 +13,9 @@ from jax_rl.agents import AWACLearner, SACLearner
 from jax_rl.datasets import ReplayBuffer
 from jax_rl.evaluation import evaluate
 from jax_rl.utils import make_env
+import time
+import datetime
+import wandb
 
 FLAGS = flags.FLAGS
 
@@ -41,6 +44,19 @@ config_flags.DEFINE_config_file(
     lock_config=False)
 
 from representations import environment_symmetries
+
+from representations import environment_symmetries
+from emlp.groups import *
+from jax import jit,vmap
+
+project_name = 'RPP-Debug-RL'
+name_time = str(datetime.datetime.now().strftime("%Y-%m-%d-%H-%M-%S"))
+note = ''
+wandb.init(
+    project=project_name,
+    name='Train-' + name_time,
+    notes=note,
+)
 
 def main(_):
     summary_writer = SummaryWriter(

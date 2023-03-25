@@ -13,6 +13,9 @@ from jax_rl.agents import AWACLearner, SACLearner
 from jax_rl.datasets import ReplayBuffer
 from jax_rl.evaluation import evaluate,rpp_evaluate
 from jax_rl.utils import make_env
+import time
+import datetime
+import wandb
 
 FLAGS = flags.FLAGS
 
@@ -53,6 +56,15 @@ config_flags.DEFINE_config_file(
 from representations import environment_symmetries
 from emlp.groups import *
 from jax import jit,vmap
+
+project_name = 'RPP-Debug-RL'
+name_time = str(datetime.datetime.now().strftime("%Y-%m-%d-%H-%M-%S"))
+note = ''
+wandb.init(
+    project=project_name,
+    name='Train-' + name_time,
+    notes=note,
+)
 
 def main(_):
     print("CWD = ", os.getcwd())
@@ -152,6 +164,10 @@ def main(_):
             for k, v in info['episode'].items():
                 summary_writer.add_scalar(f'training/{k}', v,
                                           info['total']['timesteps'])
+                train_info = {
+                    f'training/{k}': v
+                }
+                wandb.log(train_info)
 
         if i >= FLAGS.start_training:
             for _ in range(FLAGS.ncritic-1):
@@ -161,6 +177,7 @@ def main(_):
             update_info = agent.update(batch)
 
             if i % FLAGS.log_interval == 0:
+                wandb.log(update_info)
                 for k, v in update_info.items():
                     summary_writer.add_scalar(f'training/{k}', v, i)
                 summary_writer.flush()
@@ -179,6 +196,10 @@ def main(_):
 
             eval_returns.append(
                 (info['total']['timesteps'], eval_stats['return']))
+            eval_info = {
+                'eval/average returns': eval_stats['return']
+            }
+            wandb.log(eval_info)
             np.savetxt(os.path.join(FLAGS.save_dir, f'{FLAGS.seed}.txt'),
                        eval_returns,
                        fmt=['%d', '%.1f'])
