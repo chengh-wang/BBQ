@@ -49,7 +49,7 @@ from representations import environment_symmetries
 from emlp.groups import *
 from jax import jit,vmap
 
-project_name = 'RPP-Debug-RL'
+project_name = 'MLP-Debug-RL'
 name_time = str(datetime.datetime.now().strftime("%Y-%m-%d-%H-%M-%S"))
 note = ''
 wandb.init(
@@ -121,9 +121,14 @@ def main(_):
             for k, v in info['episode'].items():
                 summary_writer.add_scalar(f'training/{k}', v,
                                           info['total']['timesteps'])
+            train_info = {
+                    f'training/{k}': v
+                }
+            wandb.log(train_info)
 
         if i >= FLAGS.start_training:
             batch = replay_buffer.sample(FLAGS.batch_size)
+            wandb.log(update_info)
             update_info = agent.update(batch)
 
             if i % FLAGS.log_interval == 0:
@@ -141,6 +146,10 @@ def main(_):
 
             eval_returns.append(
                 (info['total']['timesteps'], eval_stats['return']))
+            eval_info = {
+                'eval/average returns': eval_stats['return']
+            }
+            wandb.log(eval_info)
             np.savetxt(os.path.join(FLAGS.save_dir, f'{FLAGS.seed}.txt'),
                        eval_returns,
                        fmt=['%d', '%.1f'])
