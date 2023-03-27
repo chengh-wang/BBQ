@@ -55,6 +55,7 @@ wandb.init(
     project=project_name,
     name='Train-' + name_time,
     notes=note,
+    config=dict(flags),
 )
 
 def main(_):
