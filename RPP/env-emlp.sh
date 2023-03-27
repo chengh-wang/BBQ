@@ -4,11 +4,11 @@ mkdir /root/.mujoco && cp -r /root/yanjing-nfs-hdd/chengh-wang/BBQ/RPP/mujoco210
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/root/.mujoco/mujoco210/bin
 
-apt install libgl1-mesa-dev
+apt -y install libgl1-mesa-dev
 
-apt install patchelf
+apt -y install patchelf
 
-apt install libosmesa6-dev libgl1-mesa-glx libglfw3
+apt -y install libosmesa6-dev libgl1-mesa-glx libglfw3
 
 pip install "jax[cuda11_cudnn82]" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
 

@@ -1,0 +1,85 @@
+{
+    "os": "Linux-5.15.0-67-generic-x86_64-with-glibc2.31",
+    "python": "3.9.15",
+    "heartbeatAt": "2023-03-27T23:36:35.923603",
+    "startedAt": "2023-03-27T23:36:35.157519",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/chengh-wang/Documents/git/BBQ/RPP/RL/train.py",
+    "codePath": "RPP/RL/train.py",
+    "git": {
+        "remote": "https://github.com/chengh-wang/BBQ.git",
+        "commit": "d6636e3a41e1b508ec28e2f6d72c7e693e070451"
+    },
+    "email": "wang.chengh@northeastern.edu",
+    "root": "/home/chengh-wang/Documents/git/BBQ",
+    "host": "chengh-wang",
+    "username": "chengh-wang",
+    "executable": "/home/chengh-wang/anaconda3/envs/torch-gpu/bin/python",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 3.3995,
+        "min": 800.0,
+        "max": 3800.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3.4,
+            "min": 800.0,
+            "max": 3800.0
+        },
+        {
+            "current": 3.399,
+            "min": 800.0,
+            "max": 3800.0
+        },
+        {
+            "current": 3.399,
+            "min": 800.0,
+            "max": 3800.0
+        },
+        {
+            "current": 3.4,
+            "min": 800.0,
+            "max": 3800.0
+        },
+        {
+            "current": 3.4,
+            "min": 800.0,
+            "max": 3800.0
+        },
+        {
+            "current": 3.399,
+            "min": 800.0,
+            "max": 3800.0
+        },
+        {
+            "current": 3.4,
+            "min": 800.0,
+            "max": 3800.0
+        },
+        {
+            "current": 3.399,
+            "min": 800.0,
+            "max": 3800.0
+        }
+    ],
+    "disk": {
+        "total": 142.85906982421875,
+        "used": 116.7665786743164
+    },
+    "gpu": "NVIDIA GeForce GTX 1050 Ti",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce GTX 1050 Ti",
+            "memory_total": 4294967296
+        }
+    ],
+    "memory": {
+        "total": 15.51174545288086
+    }
+}

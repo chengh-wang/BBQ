@@ -1,0 +1,14 @@
+/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/gym/envs/registration.py:505: UserWarning: [33mWARN: The environment HalfCheetah-v2 is out of date. You should consider upgrading to version `v3` with the environment ID `HalfCheetah-v3`.
+  logger.warn(
+/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/gym/core.py:172: DeprecationWarning: [33mWARN: Function `env.seed(seed)` is marked as deprecated and will be removed in the future. Please use `env.reset(seed=seed) instead.
+  deprecation(
+Traceback (most recent call last):
+  File "/home/chengh-wang/Documents/git/BBQ/RPP/RL/train.py", line 162, in <module>
+    app.run(main)
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/absl/app.py", line 303, in run
+    _run_main(main, args)
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/absl/app.py", line 251, in _run_main
+    sys.exit(main(argv))
+  File "/home/chengh-wang/Documents/git/BBQ/RPP/RL/train.py", line 82, in main
+    kwargs['action_space'] = kwargs['action_space'](kwargs['symmetry_group'])
+TypeError: 'str' object is not callable

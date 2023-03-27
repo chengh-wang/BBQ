@@ -1,0 +1,91 @@
+/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/gym/envs/registration.py:505: UserWarning: [33mWARN: The environment HalfCheetah-v2 is out of date. You should consider upgrading to version `v3` with the environment ID `HalfCheetah-v3`.
+  logger.warn(
+/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/gym/core.py:172: DeprecationWarning: [33mWARN: Function `env.seed(seed)` is marked as deprecated and will be removed in the future. Please use `env.reset(seed=seed) instead.
+  deprecation(
+I0327 19:37:19.341581 139797479875200 rpp_emlp_parts.py:16] Initing RPP-EMLP (flax)
+I0327 19:37:19.347327 139797479875200 rpp_emlp_parts.py:19] Reps: [2V⁰+15P, 126V⁰+55V+5V², 126V⁰+55V+5V²]
+I0327 19:37:19.470766 139797479875200 representation.py:105] P cache miss
+I0327 19:37:19.471088 139797479875200 representation.py:106] Solving basis for P, for G=Z(2)
+[[ 0.5479121  -0.12224312  0.71719587  0.39473605 -0.8116453   0.9512447 ]] (1, 6)
+tau =  0.005
+rpp policy is True
+I0327 19:37:20.359392 139797479875200 representation.py:105] P⊗V cache miss
+I0327 19:37:20.359783 139797479875200 representation.py:106] Solving basis for P⊗V, for G=Z(2)
+I0327 19:37:21.050694 139797479875200 representation.py:105] V cache miss
+I0327 19:37:21.051012 139797479875200 representation.py:106] Solving basis for V, for G=Z(2)
+I0327 19:37:21.058192 139797479875200 representation.py:105] V² cache miss
+I0327 19:37:21.058508 139797479875200 representation.py:106] Solving basis for V², for G=Z(2)
+I0327 19:37:21.651035 139797479875200 representation.py:105] P⊗V² cache miss
+I0327 19:37:21.651380 139797479875200 representation.py:106] Solving basis for P⊗V², for G=Z(2)
+I0327 19:37:21.867768 139797479875200 flax.py:148] Linear W components:4352 rep:252V⁰+1890P+825P⊗V+110V+10V²+75P⊗V²
+I0327 19:37:22.738629 139797479875200 flax.py:57] BiW components: dim:44860
+I0327 19:37:23.548854 139797479875200 representation.py:105] V³ cache miss
+I0327 19:37:23.549198 139797479875200 representation.py:106] Solving basis for V³, for G=Z(2)
+I0327 19:37:24.709921 139797479875200 representation.py:105] V⁴ cache miss
+I0327 19:37:24.710230 139797479875200 representation.py:106] Solving basis for V⁴, for G=Z(2)
+B1 =  0.9
+B2 =  0.999
+I0327 19:37:25.855298 139797479875200 flax.py:148] Linear W components:65536 rep:15876V⁰+13860V+4285V²+550V³+25V⁴
+I0327 19:37:26.610577 139797479875200 flax.py:57] BiW components: dim:44860
+I0327 19:37:26.684723 139797479875200 flax.py:148] Linear W components:1536 rep:756P+330P⊗V+30P⊗V²
+I0327 19:37:26.708909 139797479875200 flax.py:148] Linear W components:1536 rep:756V⁰+330V+30V²
+B1 =  0.9
+B2 =  0.999
+B1 =  0.9
+B2 =  0.999
+
+  1%|█▌                                                                                                                                                            | 9608/1000000 [00:15<23:35, 699.61it/s]/home/chengh-wang/Documents/git/BBQ/RPP/RL/jax_rl/agents/sac/critic.py:13: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  return isinstance(pars, collections.Mapping)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  1%|█▊                                                                                                                                                          | 11863/1000000 [04:32<6:17:41, 43.60it/s]
+Traceback (most recent call last):
+  File "/home/chengh-wang/Documents/git/BBQ/RPP/RL/train.py", line 162, in <module>
+    app.run(main)
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/absl/app.py", line 303, in run
+    _run_main(main, args)
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/absl/app.py", line 251, in _run_main
+    sys.exit(main(argv))
+  File "/home/chengh-wang/Documents/git/BBQ/RPP/RL/train.py", line 136, in main
+    wandb.log(update_info)
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 370, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 333, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 1714, in log
+    self._log(data=data, step=step, commit=commit)
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 1496, in _log
+    self._partial_history_callback(data, step, commit)
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 1366, in _partial_history_callback
+    self._backend.interface.publish_partial_history(
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/wandb/sdk/interface/interface.py", line 579, in publish_partial_history
+    item.value_json = json_dumps_safer_history(v)
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/wandb/util.py", line 969, in json_dumps_safer_history
+    return json.dumps(obj, cls=WandBHistoryJSONEncoder, **kwargs)
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/wandb/util.py", line 930, in default
+    obj, converted = json_friendly(obj)
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/wandb/util.py", line 750, in json_friendly
+    obj = get_jax_tensor(obj)
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/wandb/util.py", line 561, in get_jax_tensor
+    return jax.device_get(obj)
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/jax/_src/api.py", line 3077, in device_get
+    y.copy_to_host_async()
+KeyboardInterrupt

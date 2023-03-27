@@ -1,13 +1,12 @@
 import os
 import random
-
-
-
 import numpy as np
 import tqdm
 from absl import app, flags
 from ml_collections import config_flags
 from tensorboardX import SummaryWriter
+import sys
+sys.path.append("../")
 
 from jax_rl.agents import AWACLearner, SACLearner
 from jax_rl.datasets import ReplayBuffer
@@ -76,7 +75,11 @@ def main(_):
     random.seed(FLAGS.seed)
 
     kwargs = dict(FLAGS.config)
+    kwargs.update(environment_symmetries[FLAGS.env_name])
+    
     kwargs['action_space'] = environment_symmetries[FLAGS.env_name]['action_space']
+    kwargs['state_rep'] = kwargs['state_rep'](kwargs['symmetry_group'])
+    # kwargs['action_space'] = kwargs['action_space'](kwargs['symmetry_group'])
     algo = kwargs.pop('algo')
     replay_buffer_size = kwargs.pop('replay_buffer_size')
     action_dim = env.action_space.shape[0] if kwargs['action_space']=='continuous' else 1
@@ -128,9 +131,9 @@ def main(_):
 
         if i >= FLAGS.start_training:
             batch = replay_buffer.sample(FLAGS.batch_size)
-            wandb.log(update_info)
+            
             update_info = agent.update(batch)
-
+            wandb.log(update_info)
             if i % FLAGS.log_interval == 0:
                 for k, v in update_info.items():
                     summary_writer.add_scalar(f'training/{k}', v, i)

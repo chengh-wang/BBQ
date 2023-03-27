@@ -131,10 +131,10 @@ def main(_):
                 summary_writer.flush()
 
         if i % FLAGS.eval_interval == 0:
-            if (i//FLAGS.eval_interval)%4==0: # only do equivariance calc ever 4 evals
-                eval_stats = rpp_evaluate(agent,policy_mean_fn, eval_env, FLAGS.eval_episodes,kwargs,reprhos)
-            else:
-                eval_stats = evaluate(agent,eval_env,FLAGS.eval_episodes)
+            # if (i//FLAGS.eval_interval)%4==0: # only do equivariance calc ever 4 evals
+            #     eval_stats = rpp_evaluate(agent,policy_mean_fn, eval_env, FLAGS.eval_episodes,kwargs,reprhos)
+            # else:
+            eval_stats = evaluate(agent,eval_env,FLAGS.eval_episodes)
             
             for k, v in eval_stats.items():
                 summary_writer.add_scalar(f'evaluation/average_{k}s', v,
