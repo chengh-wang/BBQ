@@ -1,0 +1,7 @@
+
+CWD =  /home/chengh-wang/Documents/git/BBQ/RPP/RL
+/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/gym/envs/registration.py:505: UserWarning: [33mWARN: The environment Ant-v2 is out of date. You should consider upgrading to version `v3` with the environment ID `Ant-v3`.
+  logger.warn(
+/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/gym/core.py:172: DeprecationWarning: [33mWARN: Function `env.seed(seed)` is marked as deprecated and will be removed in the future. Please use `env.reset(seed=seed) instead.
+  deprecation(
+

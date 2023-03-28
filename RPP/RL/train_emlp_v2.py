@@ -61,11 +61,14 @@ from jax import jit,vmap
 project_name = 'EMLP-Debug-RL'
 name_time = str(datetime.datetime.now().strftime("%Y-%m-%d-%H-%M-%S"))
 note = ''
+
+flags_dict = flags.FLAGS.flag_values_dict()
+
 wandb.init(
     project=project_name,
     name='Train-' + name_time,
     notes=note,
-    config=dict(flags),
+    config=flags_dict
 )
 
 def main(_):

@@ -1,0 +1,44 @@
+/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/gym/envs/registration.py:505: UserWarning: [33mWARN: The environment HalfCheetah-v2 is out of date. You should consider upgrading to version `v3` with the environment ID `HalfCheetah-v3`.
+  logger.warn(
+/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/gym/core.py:172: DeprecationWarning: [33mWARN: Function `env.seed(seed)` is marked as deprecated and will be removed in the future. Please use `env.reset(seed=seed) instead.
+  deprecation(
+Traceback (most recent call last):
+  File "/home/chengh-wang/Documents/git/BBQ/RPP/RL/train.py", line 166, in <module>
+    app.run(main)
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/absl/app.py", line 303, in run
+    _run_main(main, args)
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/absl/app.py", line 251, in _run_main
+    sys.exit(main(argv))
+  File "/home/chengh-wang/Documents/git/BBQ/RPP/RL/train.py", line 96, in main
+    agent = SACLearner(FLAGS.seed,
+  File "/home/chengh-wang/Documents/git/BBQ/RPP/RL/jax_rl/agents/sac/sac_learner.py", line 118, in __init__
+    rng, actor_key, critic_key, temp_key = jax.random.split(rng, 4)
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/jax/_src/random.py", line 213, in split
+    return _return_prng_keys(wrapped, _split(key, num))
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/jax/_src/random.py", line 199, in _split
+    return prng.random_split(key, count=num)
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/jax/_src/prng.py", line 611, in random_split
+    return random_split_p.bind(keys, count=count)
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/jax/core.py", line 329, in bind
+    return self.bind_with_trace(find_top_trace(args), args, params)
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/jax/core.py", line 332, in bind_with_trace
+    out = trace.process_primitive(self, map(trace.full_raise, args), params)
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/jax/core.py", line 712, in process_primitive
+    return primitive.impl(*tracers, **params)
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/jax/_src/prng.py", line 623, in random_split_impl
+    base_arr = random_split_impl_base(
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/jax/_src/prng.py", line 629, in random_split_impl_base
+    return split(base_arr)
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/jax/_src/prng.py", line 628, in <lambda>
+    split = iterated_vmap_unary(keys_ndim, lambda k: impl.split(k, count))
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/jax/_src/prng.py", line 1065, in threefry_split
+    return _threefry_split(key, int(num))  # type: ignore
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/jax/_src/traceback_util.py", line 162, in reraise_with_filtered_traceback
+    return fun(*args, **kwargs)
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/jax/_src/api.py", line 623, in cache_miss
+    out_flat = call_bind_continuation(execute(*args_flat))
+  File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/jax/_src/dispatch.py", line 895, in _execute_compiled
+    out_flat = compiled.execute(in_flat)
+KeyboardInterrupt
+[[ 0.5479121  -0.12224312  0.71719587  0.39473605 -0.8116453   0.9512447 ]] (1, 6)
+tau =  0.005
