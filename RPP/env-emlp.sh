@@ -30,6 +30,8 @@ pip install objax
 
 pip install emlp
 
+pip install sklearn
+
 pip install olive-oil-ml
 
 pip install distrax
