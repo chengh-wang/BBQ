@@ -18,7 +18,7 @@ import wandb
 
 FLAGS = flags.FLAGS
 
-flags.DEFINE_string('env_name', 'HalfCheetah-v2', 'Environment name.')
+flags.DEFINE_string('env_name', 'Ant-v2', 'Environment name.')
 flags.DEFINE_string('save_dir', './tmp/', 'Tensorboard logging dir.')
 flags.DEFINE_integer('seed', 42, 'Random seed.')
 flags.DEFINE_integer('eval_episodes', 10,
