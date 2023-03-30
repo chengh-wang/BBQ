@@ -1,0 +1,38 @@
+2023-03-29 14:44:53,828 INFO    MainThread:5315 [wandb_setup.py:_flush():76] Configure stats pid to 5315
+2023-03-29 14:44:53,829 INFO    MainThread:5315 [wandb_setup.py:_flush():76] Loading settings from /root/.config/wandb/settings
+2023-03-29 14:44:53,829 INFO    MainThread:5315 [wandb_setup.py:_flush():76] Loading settings from /root/yanjing-nfs-hdd/chengh-wang/BBQ/RPP/RL/wandb/settings
+2023-03-29 14:44:53,829 INFO    MainThread:5315 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-03-29 14:44:53,829 INFO    MainThread:5315 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-03-29 14:44:53,829 INFO    MainThread:5315 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'RPP/RL/train_emlp.py', 'program': 'train_emlp.py'}
+2023-03-29 14:44:53,831 INFO    MainThread:5315 [wandb_init.py:_log_setup():506] Logging user logs to /root/yanjing-nfs-hdd/chengh-wang/BBQ/RPP/RL/wandb/run-20230329_144453-g97iqknf/logs/debug.log
+2023-03-29 14:44:53,833 INFO    MainThread:5315 [wandb_init.py:_log_setup():507] Logging internal logs to /root/yanjing-nfs-hdd/chengh-wang/BBQ/RPP/RL/wandb/run-20230329_144453-g97iqknf/logs/debug-internal.log
+2023-03-29 14:44:53,833 INFO    MainThread:5315 [wandb_init.py:init():546] calling init triggers
+2023-03-29 14:44:53,834 INFO    MainThread:5315 [wandb_init.py:init():552] wandb.init called with sweep_config: {}
+config: {'logtostderr': False, 'alsologtostderr': False, 'log_dir': '', 'v': -1, 'verbosity': -1, 'logger_levels': {}, 'stderrthreshold': 'fatal', 'showprefixforinfo': True, 'run_with_pdb': False, 'pdb_post_mortem': False, 'pdb': False, 'run_with_profiling': False, 'profile_file': None, 'use_cprofile_for_profiling': True, 'only_check_args': False, 'chex_n_cpu_devices': 1, 'chex_assert_multiple_cpu_devices': False, 'test_srcdir': '', 'test_tmpdir': '/tmp/absl_testing', 'test_random_seed': 301, 'test_randomize_ordering_seed': '', 'xml_output_file': '', 'chex_skip_pmap_variant_if_single_device': True, 'env_name': 'Ant-v2', 'save_dir': './tmp/', 'seed': 42, 'eval_episodes': 10, 'log_interval': 1000, 'eval_interval': 10000, 'batch_size': 256, 'max_steps': 1000000, 'start_training': 10000, 'tqdm': True, 'save_video': False, 'rpp_value': False, 'rpp_policy': False, 'group': '', 'equiv_wd': 1e-06, 'basic_wd': 1e-06, 'cequiv_wd': 0.0, 'cbasic_wd': 0.0, 'hidden_dims': [256, 256], 'small_init': True, 'old_rep': False, 'gan_betas': False, 'tau': 0.005, 'standardize': False, 'clipping': 0.5, 'ncritic': 1, 'config': actor_lr: 0.0003
+algo: sac
+critic_lr: 0.0003
+discount: 0.99
+hidden_dims: !!python/tuple
+- 256
+- 256
+init_temperature: 1.0
+replay_buffer_size: null
+target_entropy: null
+target_update_period: 1
+temp_lr: 0.0003
+}
+2023-03-29 14:44:53,834 INFO    MainThread:5315 [wandb_init.py:init():602] starting backend
+2023-03-29 14:44:53,834 INFO    MainThread:5315 [wandb_init.py:init():606] setting up manager
+2023-03-29 14:44:53,863 INFO    MainThread:5315 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-03-29 14:44:53,891 INFO    MainThread:5315 [wandb_init.py:init():613] backend started and connected
+2023-03-29 14:44:53,897 INFO    MainThread:5315 [wandb_init.py:init():701] updated telemetry
+2023-03-29 14:44:54,092 INFO    MainThread:5315 [wandb_init.py:init():741] communicating run to backend with 60.0 second timeout
+2023-03-29 14:44:54,506 INFO    MainThread:5315 [wandb_run.py:_on_init():2133] communicating current version
+2023-03-29 14:44:54,593 INFO    MainThread:5315 [wandb_run.py:_on_init():2142] got version response 
+2023-03-29 14:44:54,593 INFO    MainThread:5315 [wandb_init.py:init():789] starting run threads in backend
+2023-03-29 14:44:58,400 INFO    MainThread:5315 [wandb_run.py:_console_start():2114] atexit reg
+2023-03-29 14:44:58,401 INFO    MainThread:5315 [wandb_run.py:_redirect():1969] redirect: SettingsConsole.WRAP_RAW
+2023-03-29 14:44:58,401 INFO    MainThread:5315 [wandb_run.py:_redirect():2034] Wrapping output streams.
+2023-03-29 14:44:58,401 INFO    MainThread:5315 [wandb_run.py:_redirect():2059] Redirects installed.
+2023-03-29 14:44:58,402 INFO    MainThread:5315 [wandb_init.py:init():831] run started, returning control to user process
+2023-03-29 15:21:16,144 WARNING MsgRouterThr:5315 [router.py:message_loop():77] message_loop has been closed

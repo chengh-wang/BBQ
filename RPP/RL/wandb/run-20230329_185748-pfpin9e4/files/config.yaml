@@ -1,0 +1,210 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.14.0
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.8.16
+    start_time: 1680116268.454461
+    t:
+      1:
+      - 1
+      - 5
+      - 12
+      - 45
+      - 53
+      - 55
+      2:
+      - 1
+      - 5
+      - 12
+      - 45
+      - 53
+      - 55
+      3:
+      - 13
+      - 16
+      - 23
+      4: 3.8.16
+      5: 0.14.0
+      8:
+      - 5
+alsologtostderr:
+  desc: null
+  value: false
+basic_wd:
+  desc: null
+  value: 1.0e-06
+batch_size:
+  desc: null
+  value: 256
+cbasic_wd:
+  desc: null
+  value: 0.0
+cequiv_wd:
+  desc: null
+  value: 0.0
+chex_assert_multiple_cpu_devices:
+  desc: null
+  value: false
+chex_n_cpu_devices:
+  desc: null
+  value: 1
+chex_skip_pmap_variant_if_single_device:
+  desc: null
+  value: true
+clipping:
+  desc: null
+  value: 0.5
+config:
+  desc: null
+  value: 'actor_lr: 0.0003
+
+    algo: sac
+
+    critic_lr: 0.0003
+
+    discount: 0.99
+
+    hidden_dims: !!python/tuple
+
+    - 256
+
+    - 256
+
+    init_temperature: 1.0
+
+    replay_buffer_size: null
+
+    target_entropy: null
+
+    target_update_period: 1
+
+    temp_lr: 0.0003
+
+    '
+env_name:
+  desc: null
+  value: Ant-v2
+equiv_wd:
+  desc: null
+  value: 1.0e-06
+eval_episodes:
+  desc: null
+  value: 10
+eval_interval:
+  desc: null
+  value: 10000
+gan_betas:
+  desc: null
+  value: false
+group:
+  desc: null
+  value: SO(2)
+hidden_dims:
+  desc: null
+  value:
+  - 256
+  - 256
+log_dir:
+  desc: null
+  value: ''
+log_interval:
+  desc: null
+  value: 1000
+logger_levels:
+  desc: null
+  value: {}
+logtostderr:
+  desc: null
+  value: false
+max_steps:
+  desc: null
+  value: 1000000
+ncritic:
+  desc: null
+  value: 1
+old_rep:
+  desc: null
+  value: false
+only_check_args:
+  desc: null
+  value: false
+pdb:
+  desc: null
+  value: false
+pdb_post_mortem:
+  desc: null
+  value: false
+profile_file:
+  desc: null
+  value: null
+rpp_policy:
+  desc: null
+  value: false
+rpp_value:
+  desc: null
+  value: false
+run_with_pdb:
+  desc: null
+  value: false
+run_with_profiling:
+  desc: null
+  value: false
+save_dir:
+  desc: null
+  value: ./tmp/
+save_video:
+  desc: null
+  value: false
+seed:
+  desc: null
+  value: 42
+showprefixforinfo:
+  desc: null
+  value: true
+small_init:
+  desc: null
+  value: true
+standardize:
+  desc: null
+  value: false
+start_training:
+  desc: null
+  value: 10000
+stderrthreshold:
+  desc: null
+  value: fatal
+tau:
+  desc: null
+  value: 0.005
+test_random_seed:
+  desc: null
+  value: 301
+test_randomize_ordering_seed:
+  desc: null
+  value: ''
+test_srcdir:
+  desc: null
+  value: ''
+test_tmpdir:
+  desc: null
+  value: /tmp/absl_testing
+tqdm:
+  desc: null
+  value: true
+use_cprofile_for_profiling:
+  desc: null
+  value: true
+v:
+  desc: null
+  value: -1
+verbosity:
+  desc: null
+  value: -1
+xml_output_file:
+  desc: null
+  value: ''

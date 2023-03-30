@@ -1,0 +1,205 @@
+{
+    "os": "Linux-5.19.0-35-generic-x86_64-with-glibc2.17",
+    "python": "3.8.16",
+    "heartbeatAt": "2023-03-29T18:57:49.226674",
+    "startedAt": "2023-03-29T18:57:48.027418",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "train_emlp.py",
+    "codePath": "RPP/RL/train_emlp.py",
+    "git": {
+        "remote": "https://github.com/chengh-wang/BBQ.git",
+        "commit": "90fe051add68ce5a2818c5421eb652ab0acdc9f0"
+    },
+    "email": "wang.chengh@northeastern.edu",
+    "root": "/root/yanjing-nfs-hdd/chengh-wang/BBQ",
+    "host": "grail-venus",
+    "username": "root",
+    "executable": "/opt/conda/bin/python",
+    "cpu_count": 16,
+    "cpu_count_logical": 32,
+    "cpu_freq": {
+        "current": 2446.301343750001,
+        "min": 2200.0,
+        "max": 3900.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 4184.185,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2120.127,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2200.0,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2200.0,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2116.912,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2200.0,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2130.727,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 4236.128,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2200.0,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2200.0,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2396.152,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2200.0,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 4241.675,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2120.615,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2194.672,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2120.461,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 4225.506,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2114.968,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 4092.944,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2123.451,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2200.0,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2200.0,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2200.0,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 4237.212,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2200.0,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2200.0,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 4245.279,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2200.0,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 4241.844,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2120.389,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 4239.863,
+            "min": 2200.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2120.377,
+            "min": 2200.0,
+            "max": 3900.0
+        }
+    ],
+    "disk": {
+        "total": 1832.2072448730469,
+        "used": 167.9555892944336
+    },
+    "gpu": "NVIDIA GeForce RTX 3080",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3080",
+            "memory_total": 10737418240
+        }
+    ],
+    "memory": {
+        "total": 251.51851654052734
+    }
+}

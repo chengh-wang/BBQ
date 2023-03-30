@@ -1,0 +1,145 @@
+{
+    "os": "Linux-5.19.0-35-generic-x86_64-with-glibc2.17",
+    "python": "3.8.16",
+    "heartbeatAt": "2023-03-29T20:42:24.804494",
+    "startedAt": "2023-03-29T20:42:23.600412",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "train_emlp_v2.py",
+    "codePath": "RPP/RL/train_emlp_v2.py",
+    "git": {
+        "remote": "https://github.com/chengh-wang/BBQ.git",
+        "commit": "90fe051add68ce5a2818c5421eb652ab0acdc9f0"
+    },
+    "email": null,
+    "root": "/root/yanjing-nfs-hdd/chengh-wang/BBQ",
+    "host": "yanjing",
+    "username": "root",
+    "executable": "/opt/conda/bin/python",
+    "cpu_count": 10,
+    "cpu_count_logical": 20,
+    "cpu_freq": {
+        "current": 2318.42565,
+        "min": 1200.0,
+        "max": 4120.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1200.069,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1200.18,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1201.074,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1200.062,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 3300.0,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1200.003,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1200.246,
+            "min": 1200.0,
+            "max": 4200.0
+        },
+        {
+            "current": 1199.796,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1300.027,
+            "min": 1200.0,
+            "max": 4200.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 3300.0,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 3300.0,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1199.91,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1200.041,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 3300.0,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 3300.0,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 3300.0,
+            "min": 1200.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3300.0,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 1899.984,
+            "min": 1200.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3300.0,
+            "min": 1200.0,
+            "max": 4100.0
+        }
+    ],
+    "disk": {
+        "total": 937.3285484313965,
+        "used": 79.22773742675781
+    },
+    "gpu": "NVIDIA GeForce RTX 2080 Ti",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 2080 Ti",
+            "memory_total": 11811160064
+        }
+    ],
+    "memory": {
+        "total": 125.47717666625977
+    }
+}
