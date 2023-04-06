@@ -33,8 +33,8 @@ flags.DEFINE_integer('start_training', int(1e4),
 flags.DEFINE_boolean('tqdm', True, 'Use tqdm progress bar.')
 flags.DEFINE_boolean('save_video', False, 'Save videos during evaluation.')
 flags.DEFINE_boolean('rpp_value', False, 'Use RPP for value function')
-flags.DEFINE_boolean('rpp_policy', True, 'Use RPP for policy function')
-flags.DEFINE_string('group', '', 'Also use RPP for value function')
+flags.DEFINE_boolean('rpp_policy', False, 'Use RPP for policy function')
+flags.DEFINE_string('group', 'MLP', 'Also use RPP for value function')
 flags.DEFINE_float('equiv_wd', 1e-6, 'Policy Equivariant weight decay')
 flags.DEFINE_float('basic_wd', 1e-6, 'Policy Basic weight decay')
 flags.DEFINE_float('cequiv_wd', 0, 'Critic Equivariant weight decay')
@@ -57,7 +57,7 @@ from representations import environment_symmetries
 from emlp.groups import *
 from jax import jit,vmap
 
-project_name = 'RPP-Debug-RL'
+project_name = 'EMLP-Debug-RL'
 name_time = str(datetime.datetime.now().strftime("%Y-%m-%d-%H-%M-%S"))
 note = ''
 wandb.init(

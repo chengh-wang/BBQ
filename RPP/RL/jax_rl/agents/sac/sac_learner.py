@@ -89,7 +89,7 @@ class SACLearner(object):
                  inv_action_transform=lambda x:x,
                  action_space="continuous",
                  rpp_value=False,
-                 rpp_policy=True,
+                 rpp_policy=False,
                  small_init=True,
                  middle_rep=None,
                  standardizer=None,
