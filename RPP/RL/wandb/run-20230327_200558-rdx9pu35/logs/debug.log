@@ -35,3 +35,4 @@ temp_lr: 0.0003
 2023-03-27 20:06:03,478 INFO    MainThread:123649 [wandb_run.py:_redirect():2034] Wrapping output streams.
 2023-03-27 20:06:03,478 INFO    MainThread:123649 [wandb_run.py:_redirect():2059] Redirects installed.
 2023-03-27 20:06:03,479 INFO    MainThread:123649 [wandb_init.py:init():831] run started, returning control to user process
+2023-03-27 20:07:10,949 WARNING MsgRouterThr:123649 [router.py:message_loop():77] message_loop has been closed

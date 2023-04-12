@@ -118,6 +118,7 @@ class SACLearner(object):
         rng, actor_key, critic_key, temp_key = jax.random.split(rng, 4)
         print("rpp policy is",rpp_policy)
         if rpp_policy: # Use RPP-EMLP policy
+            print("Use RPP-EMLP policy")
             if action_space == "discrete":
                 actor_def = policies.RPPSoftmaxPolicy(state_rep,action_rep,symmetry_group,hidden_dims,
                     state_transform=state_transform,inv_action_transform=inv_action_transform)
@@ -126,6 +127,7 @@ class SACLearner(object):
                 actor_def = policies.RPPNormalTanhPolicy(state_rep,action_rep,action_std_rep,symmetry_group,ch,
                     state_transform=state_transform,inv_action_transform=inv_action_transform,small_init=small_init)
         else:
+            print("Not use RPP-EMLP policy")
             if action_space == "discrete":
                 actor_def = policies.SoftmaxPolicy(hidden_dims, action_dim)
             else:

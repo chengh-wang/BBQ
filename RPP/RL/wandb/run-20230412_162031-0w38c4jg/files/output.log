@@ -6,34 +6,18 @@ CWD =  /home/chengh-wang/Documents/git/BBQ/RPP/RL
   deprecation(
 
 
-  1%|█▌                                                                                                                                                           | 9920/1000000 [00:04<07:44, 2130.96it/s]/home/chengh-wang/Documents/git/BBQ/RPP/RL/jax_rl/agents/sac_emlp/actor.py:12: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  1%|▌                                                     | 9908/1000000 [00:05<10:49, 1523.32it/s]/home/chengh-wang/Documents/git/BBQ/RPP/RL/jax_rl/agents/sac_emlp/actor.py:12: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
   return isinstance(pars, collections.Mapping)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  2%|██▋                                                                                                                                                          | 17492/1000000 [00:53<50:31, 324.12it/s]
+  1%|▌                                                     | 10541/1000000 [00:19<30:47, 535.56it/s]
 Traceback (most recent call last):
-  File "/home/chengh-wang/Documents/git/BBQ/RPP/RL/train_emlp.py", line 206, in <module>
+  File "/home/chengh-wang/Documents/git/BBQ/RPP/RL/train_emlp_v2.py", line 208, in <module>
     app.run(main)
   File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/absl/app.py", line 303, in run
     _run_main(main, args)
   File "/home/chengh-wang/anaconda3/envs/torch-gpu/lib/python3.9/site-packages/absl/app.py", line 251, in _run_main
     sys.exit(main(argv))
-  File "/home/chengh-wang/Documents/git/BBQ/RPP/RL/train_emlp.py", line 175, in main
+  File "/home/chengh-wang/Documents/git/BBQ/RPP/RL/train_emlp_v2.py", line 177, in main
     update_info = agent.update(batch)
   File "/home/chengh-wang/Documents/git/BBQ/RPP/RL/jax_rl/agents/sac_emlp/sac_learner.py", line 139, in update
     self.sac, info = _update_jit(

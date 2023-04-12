@@ -21,7 +21,7 @@ FLAGS = flags.FLAGS
 
 flags.DEFINE_string('env_name', 'Ant-v2', 'Environment name.')
 flags.DEFINE_string('save_dir', './tmp/', 'Tensorboard logging dir.')
-flags.DEFINE_integer('seed', 42, 'Random seed.')
+flags.DEFINE_integer('seed',  int(datetime.datetime.now().timestamp()), 'Random seed.')
 flags.DEFINE_integer('eval_episodes', 10,
                      'Number of episodes used for evaluation.')
 flags.DEFINE_integer('log_interval', 1000, 'Logging interval.')
@@ -43,6 +43,7 @@ flags.DEFINE_list('hidden_dims', [256,256], 'Dimension of hidden layers')
 flags.DEFINE_boolean('small_init', True, 'Use smaller init for last policy layer')
 flags.DEFINE_boolean('old_rep',False,"Use original rep allocation heuristic")
 flags.DEFINE_boolean('is_emlp',False,"Use to distinguish between MLP and EMLP")
+flags.DEFINE_boolean('customized_reward',True,"use to distinguish between origin reward or not")
 flags.DEFINE_boolean("gan_betas", False, "use GAN betas or not")
 flags.DEFINE_float("tau", 0.005, 'tau for SAC updates')
 flags.DEFINE_boolean('standardize',False,"Use equivariant standardization of the state")
@@ -149,6 +150,12 @@ def main(_):
         else:
             action = agent.sample_actions(observation)
         next_observation, reward, done, info = env.step(action)
+
+        # modifiction of reward function for test EMLPvsMLP, new reward should be random walk, Chenghao 4.12
+        x_velocity = next_observation[13]
+        y_velocity = next_observation[14]
+        velocity_abs = pow((pow(x_velocity,2)+pow(y_velocity,2)),1/2)
+        reward = reward - x_velocity + velocity_abs
         # print("reward = ",reward)
 
         if not done or 'TimeLimit.truncated' in info:

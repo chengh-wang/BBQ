@@ -1,0 +1,77 @@
+{
+    "os": "Linux-5.15.0-69-generic-x86_64-with-glibc2.31",
+    "python": "3.9.15",
+    "heartbeatAt": "2023-04-12T20:52:48.729232",
+    "startedAt": "2023-04-12T20:52:46.402570",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/chengh-wang/Documents/git/BBQ/RPP/RL/train_rpp.py",
+    "codePath": "RPP/RL/train_rpp.py",
+    "git": {
+        "remote": "https://github.com/chengh-wang/BBQ.git",
+        "commit": "c24063dfd3ec737a5000d325648fdb2c438a768c"
+    },
+    "email": "wang.chengh@northeastern.edu",
+    "root": "/home/chengh-wang/Documents/git/BBQ",
+    "host": "chengh-wang",
+    "username": "chengh-wang",
+    "executable": "/home/chengh-wang/anaconda3/envs/torch-gpu/bin/python",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2.6625,
+        "min": 800.0,
+        "max": 3800.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2.8,
+            "min": 800.0,
+            "max": 3800.0
+        },
+        {
+            "current": 2.8,
+            "min": 800.0,
+            "max": 3800.0
+        },
+        {
+            "current": 1.7,
+            "min": 800.0,
+            "max": 3800.0
+        },
+        {
+            "current": 2.8,
+            "min": 800.0,
+            "max": 3800.0
+        },
+        {
+            "current": 2.8,
+            "min": 800.0,
+            "max": 3800.0
+        },
+        {
+            "current": 2.8,
+            "min": 800.0,
+            "max": 3800.0
+        },
+        {
+            "current": 2.8,
+            "min": 800.0,
+            "max": 3800.0
+        },
+        {
+            "current": 2.8,
+            "min": 800.0,
+            "max": 3800.0
+        }
+    ],
+    "disk": {
+        "total": 142.85906982421875,
+        "used": 133.91302108764648
+    },
+    "memory": {
+        "total": 15.511749267578125
+    }
+}
