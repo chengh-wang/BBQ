@@ -24,7 +24,7 @@ flags.DEFINE_integer('seed', int(datetime.datetime.now().timestamp()), 'Random s
 flags.DEFINE_integer('eval_episodes', 10,
                      'Number of episodes used for evaluation.')
 flags.DEFINE_integer('log_interval', 1000, 'Logging interval.')
-flag42s.DEFINE_integer('eval_interval', 10000, 'Eval interval.')
+flags.DEFINE_integer('eval_interval', 10000, 'Eval interval.')
 flags.DEFINE_integer('batch_size', 256, 'Mini batch size.')
 flags.DEFINE_integer('max_steps', int(1e6), 'Number of training steps.')
 flags.DEFINE_integer('start_training', int(1e4),
