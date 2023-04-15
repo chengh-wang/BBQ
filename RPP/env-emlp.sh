@@ -46,5 +46,4 @@ pip install absl-py==0.12.0
 
 pip install numpy
 
-
-
+echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/root/.mujoco/mujoco210/bin' >> ~/.bashrc
